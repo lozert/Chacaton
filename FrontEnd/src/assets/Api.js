@@ -19,6 +19,7 @@ export function getHistoryElement(history_id){
     return JSON.parse(localStorage.getItem('history'))[history_id]
 }
 export async function sendPrompt(obj){
+    // Такой же ip и порт как и у main в backend
     let ip = 'http://192.168.31.243:8000'
     return await fetch(ip, {
         method: "POST",
