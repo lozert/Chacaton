@@ -24,4 +24,5 @@ def handle_request():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
+    # ip и порт на котором запускается backend часть 
     app.run(host='192.168.31.243', port=8000, debug=True)
